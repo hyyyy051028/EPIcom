@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-Hans',
-  title: '西安邮电大学 EPI 软件实验室',
+  title: 'EPI 软件实验室',
   description: '工程实践、项目创新、开放协作',
   cleanUrls: true,
   lastUpdated: true,
@@ -10,10 +10,13 @@ export default defineConfig({
     logo: '/img/logo.svg',
     nav: [
       {text: '首页', link: '/'},
-      {text: '实验室介绍', link: '/guide/intro'},
+      {text: '实验室介绍', items: [
+        {text: '实验室介绍', link: '/guide/intro'},
+        {text: '培养方向', link: '/guide/directions'},
+      ]},
       {text: '实验室动态', link: '/blog/'},
       {text: '加入我们', link: '/join-us'},
-      {text: '参考站点', link: 'https://www.xiyoulinux.com/'},
+      {text: '学校官网', link: 'https://xupt.edu.cn/'},
     ],
     sidebar: {
       '/guide/': [
@@ -25,6 +28,7 @@ export default defineConfig({
             {text: '加入我们', link: '/join-us'},
           ],
         },
+        
       ],
       '/blog/': [
         {

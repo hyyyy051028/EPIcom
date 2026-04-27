@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: 西安邮电大学 EPI 软件实验室
+  name: EPI 软件实验室
   text: 工程实践、项目创新、开放协作
   tagline: 面向软件工程、系统研发与团队协作能力培养，构建集学习、实践、竞赛、项目孵化于一体的技术成长社区。
   image:
-    src: /img/logo.svg
+    src: /img/logo.png
     alt: EPI 软件实验室
   actions:
     - theme: brand
