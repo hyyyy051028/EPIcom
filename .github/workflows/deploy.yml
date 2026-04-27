@@ -33,13 +33,23 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
+      - name: Show runtime versions
+        run: |
+          node -v
+          npm -v
+
       - name: Install dependencies
         run: npm ci
+
+      - name: Verify Docusaurus install
+        run: |
+          ls -la node_modules/.bin
+          test -f node_modules/@docusaurus/core/bin/docusaurus.mjs
 
       - name: Build site
         env:
           CI: true
-        run: npm run build
+        run: npx docusaurus build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
