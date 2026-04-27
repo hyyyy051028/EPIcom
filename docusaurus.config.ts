@@ -11,11 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://hyyyy051028.github.io',
-  baseUrl: '/EPIcom/',
-
-  organizationName: 'hyyyy051028',
-  projectName: 'EPIcom',
+  url: 'https://example.pages.dev',
+  baseUrl: '/',
 
   onBrokenLinks: 'throw',
 
