@@ -39,6 +39,12 @@ jobs:
           node -v
           npm -v
 
+      - name: Downgrade npm for stability
+        run: |
+          set -euxo pipefail
+          npm install -g npm@10
+          npm -v
+
       - name: Install dependencies
         run: |
           set -euxo pipefail
