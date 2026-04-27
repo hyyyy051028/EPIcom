@@ -11,11 +11,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://epi.xupt.edu.cn',
-  baseUrl: '/',
+  url: 'https://hyyyy051028.github.io',
+  baseUrl: '/EPIcom/',
 
-  organizationName: 'xupt-epi',
-  projectName: 'epi-lab-homepage',
+  organizationName: 'hyyyy051028',
+  projectName: 'EPIcom',
 
   onBrokenLinks: 'throw',
 
