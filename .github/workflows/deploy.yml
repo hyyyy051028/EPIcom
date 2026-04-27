@@ -54,8 +54,8 @@ jobs:
           test -f node_modules/@docusaurus/core/bin/docusaurus.mjs
 
       - name: Build site
-        env:
-          CI: true
+        # env:
+        #   CI: true
         run: |
           set -euxo pipefail
           npx docusaurus build
