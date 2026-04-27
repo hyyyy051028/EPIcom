@@ -10,11 +10,11 @@ export default defineConfig({
     logo: '/img/logo.svg',
     nav: [
       {text: '首页', link: '/'},
-      {text: '实验室介绍', items: [
+      {text: '介绍', items: [
         {text: '实验室介绍', link: '/guide/intro'},
-        {text: '培养方向', link: '/guide/directions'},
+        {text: '方向介绍', link: '/guide/directions'},
+        {text: '培养方案介绍', link: '/guide/scheme'},
       ]},
-      {text: '实验室动态', link: '/blog/'},
       {text: '加入我们', link: '/join-us'},
       {text: '学校官网', link: 'https://xupt.edu.cn/'},
     ],
@@ -24,18 +24,9 @@ export default defineConfig({
           text: '实验室介绍',
           items: [
             {text: '实验室介绍', link: '/guide/intro'},
-            {text: '培养方向', link: '/guide/directions'},
+            {text: '方向介绍', link: '/guide/directions'},
+            {text: '培养方案介绍', link: '/guide/scheme'},
             {text: '加入我们', link: '/join-us'},
-          ],
-        },
-        
-      ],
-      '/blog/': [
-        {
-          text: '实验室动态',
-          items: [
-            {text: '动态总览', link: '/blog/'},
-            {text: '欢迎来到 EPI 软件实验室', link: '/blog/2026-04-27-welcome-to-epi'},
           ],
         },
       ],
