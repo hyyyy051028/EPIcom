@@ -35,21 +35,24 @@ jobs:
 
       - name: Show runtime versions
         run: |
+          set -euxo pipefail
           node -v
           npm -v
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Verify Docusaurus install
         run: |
-          ls -la node_modules/.bin
+          set -euxo pipefail
+          npm ci
+          test -d node_modules
+          test -d node_modules/.bin
           test -f node_modules/@docusaurus/core/bin/docusaurus.mjs
 
       - name: Build site
         env:
           CI: true
-        run: npx docusaurus build
+        run: |
+          set -euxo pipefail
+          npx docusaurus build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
