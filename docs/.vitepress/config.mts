@@ -43,8 +43,8 @@ export default defineConfig({
     },
   },
   head: [
-    ['link', {rel: 'icon', href: '/img/favicon.ico'}],
+    ['link', {rel: 'icon', href: '/img/logo.svg'}],
     ['meta', {name: 'theme-color', content: '#2563eb'}],
-    ['meta', {property: 'og:image', content: '/img/docusaurus-social-card.jpg'}],
+    ['meta', {property: 'og:image', content: '/img/logo.svg'}],
   ],
 })
